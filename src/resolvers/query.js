@@ -1,4 +1,4 @@
-const models = require("../src/models");
+const models = require("../models");
 
 //file: src/resolvers/query.js
 module.exports = {
