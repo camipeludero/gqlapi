@@ -47,6 +47,7 @@ const server = new ApolloServer({
   validationRules: [depthLimit(5), createComplexityLimitRule(1000)],
   persistedQueries: false,
   playground: true,
+  introspection: true,
 });
 
 //Apply the Apollo GraphQL middleware and set the path to /api
