@@ -45,6 +45,8 @@ const server = new ApolloServer({
     return { models, user };
   },
   validationRules: [depthLimit(5), createComplexityLimitRule(1000)],
+  playground: true,
+  introspection: true,
 });
 
 //Apply the Apollo GraphQL middleware and set the path to /api
